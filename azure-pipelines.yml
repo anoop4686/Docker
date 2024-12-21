@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '538ac310-b651-423f-94e7-889dbc53b457'
   imageRepository: 'anoopdocker'
   containerRegistry: 'devops61.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/Maxant-9090/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/apache-web-server-9090/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
