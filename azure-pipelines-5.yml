@@ -24,7 +24,7 @@ stages:
         command: buildAndPush
 #        repository: $(dockerImageName)
         repository: DemoRegistry132
-        dockerfile: '**/Dockerfile' # Adjust if your Dockerfile is in a subdirectory
+        dockerfile: '$(Build.SourcesDirectory)/Maxant-9090/Dockerfile' # Adjust if your Dockerfile is in a subdirectory
         containerRegistry: 'Anoop-Custom-Service'
         tags: |
           $(dockerImageTag)
